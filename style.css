@@ -1,0 +1,162 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+
+header {
+	background:-webkit-linear-gradient(30deg,#85C546,#6FBE57,#35AD8E,#33AD96,#2CABB1);
+	background:-o-linear-gradient(30deg,#85C546,#6FBE57,#35AD8E,#33AD96,#2CABB1);
+	background:-moz-linear-gradient(30deg,#85C546,#6FBE57,#35AD8E,#33AD96,#2CABB1);
+	background:linear-gradient(30deg,#85C546,#6FBE57,#35AD8E,#33AD96,#2CABB1);
+
+	color:#F9F9F9;
+	text-align: center;
+	line-height:45px;
+	height: 45px;
+}
+nav {
+
+	background-color: #353F47;
+	color: white;
+	display: flex;
+	
+}
+
+.lientitre {
+	color:#FCFEFD;
+}
+
+/*Menu*/
+.menus{
+	float: left;
+	display:flex;
+	margin: auto;
+	margin-left: 0px;
+}
+.menus2{
+	float: right;
+	display:flex;
+	margin: auto;
+	margin-right: 0px;
+}
+
+.menus a ,.menus2 a{
+	
+	padding: 10px;
+	color:#E7EFF0;
+}
+.menus a:hover,.menus2 a:hover{
+	color: #709B2A;
+}
+/*centrage des différents menus*/
+
+/*Sous Menu*/
+.sous-menus {
+	background-color: #282D32;	
+}
+.sous-menus-list {
+	display:flex;
+	justify-content: center;	
+}
+
+.sous-menus-list a {
+	
+	padding: 10px;
+	color:#AEB1B3;
+}
+.sous-menus-list a:hover {
+	color: #709B2A;
+	
+}
+
+/*Barre de recherche*/
+form{
+	display: flex;
+}
+/* Style the search field */
+form.example input[type=text] {
+  padding: 5px;
+  margin: 15px 0 15px 15px;  
+  font-size: 16px;
+  border: 0px solid #f1f1f1;
+  border-right: none;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  float: left;
+  width: 70%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  margin: 15px 15px 15px 0px;  
+  padding: 5px;
+  background: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  border: 0px solid #f1f1f1;
+  border-left: none; /* Prevent double borders */
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #709B2A;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*bannière*/
+.banner {
+	background-color: #68CB9B;
+}
+.imgbanner {
+
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Les cartes*/
+.menucarte {
+
+	padding: 10%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+}
+.carte{
+	border:1px solid #DFDFDF;
+	border-radius: 5px;
+	box-shadow: 0px 1px 3px #E8E8E7;
+	height: 320px;
+	width: 250px;
+	padding: 10px;
+	margin: 40px;
+	font-size: 14px;
+	text-align: center;
+}
+.carte h2 {
+	font-size: 17px;
+	font-weight: bold;
+	text-align: left;
+	margin-top: 60px;
+}
+.carte p {
+	text-align: left;
+	text-align: justify;
+	margin-top: 5px;
+}
+.carte a {
+	color:black;
+}
