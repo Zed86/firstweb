@@ -5,7 +5,6 @@
 	list-style-type: none;
 }
 
-
 header {
 	background:-webkit-linear-gradient(30deg,#85C546,#6FBE57,#35AD8E,#33AD96,#2CABB1);
 	background:-o-linear-gradient(30deg,#85C546,#6FBE57,#35AD8E,#33AD96,#2CABB1);
@@ -17,28 +16,32 @@ header {
 	line-height:45px;
 	height: 45px;
 }
-nav {
-
-	background-color: #353F47;
-	color: white;
-	display: flex;
-	
-}
-
 .lientitre {
 	color:#FCFEFD;
 }
+.banner{
+	display: none;
+}
+nav img{
+	display: flex;
+	margin: auto;
+}
+nav {
 
+	background-color: #353F47;
+	color: white;	
+}
 /*Menu*/
+.menup{
+	padding: 3px;
+	display: flex;
+}
 .menus{
-	float: left;
-	display:flex;
+
 	margin: auto;
 	margin-left: 0px;
 }
-.menus2{
-	float: right;
-	display:flex;
+.menus2{	
 	margin: auto;
 	margin-right: 0px;
 }
@@ -51,28 +54,11 @@ nav {
 .menus a:hover,.menus2 a:hover{
 	color: #709B2A;
 }
-/*centrage des différents menus*/
-
-/*Sous Menu*/
-.sous-menus {
-	background-color: #282D32;	
-}
-.sous-menus-list {
-	display:flex;
-	justify-content: center;	
-}
-
-.sous-menus-list a {
-	
-	padding: 10px;
-	color:#AEB1B3;
-}
 .sous-menus-list a:hover {
 	color: #709B2A;
 	
 }
 
-/*Barre de recherche*/
 form{
 	display: flex;
 }
@@ -116,17 +102,24 @@ form.example::after {
   clear: both;
   display: table;
 }
-/*bannière*/
-.banner {
-	background-color: #68CB9B;
+/*Sous Menu*/
+.sous-menus {
+	padding: 3px;
+	display: flex;
+	justify-content: space-between;
+	background-color: #282D32;	
 }
-.imgbanner {
+.sous-menus-list {
+	
+	justify-content: center;	
+}
 
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
+.sous-menus-list a {
+	
+	padding: 10px;
+	color:#AEB1B3;
 }
-/*Les cartes*/
+/*menucarte*/
 .menucarte {
 
 	padding: 10%;
@@ -159,4 +152,66 @@ form.example::after {
 }
 .carte a {
 	color:black;
+}
+@media only screen and (min-width: 768px) {
+	/*bannière*/
+	.banner {
+		display: block;
+		background-color: #68CB9B;
+	}
+	.imgbanner {
+
+		display: block;
+	    width: 100%;
+	}
+	
+	.carte{		
+		margin:10px;		
+	}
+	
+}
+@media only screen and (min-width: 1000px) {
+
+	nav{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	nav img{
+		
+		margin:0;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+
+	form{
+		
+		margin-top: auto;
+		margin-bottom: auto;
+		}
+	
+	.menup{
+	width:60%;
+	}
+
+	.menus{
+		display: flex;
+		float: left;		
+	}
+
+	.menus2{
+			
+		display: flex;
+		float: right;
+	}
+	.sous-menus{
+		justify-content: center;
+		width: 100%;
+	}
+	.sous-menus-list {
+	
+	display: flex;	
+	}
+	
+	
 }
