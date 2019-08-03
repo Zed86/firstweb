@@ -36,6 +36,22 @@ nav {
 	padding: 3px;
 	display: flex;
 }
+.menup li,.sous-menus li{
+	border:5px solid #709B2A;
+	border-radius: 8px;
+	margin-top: 10px;
+	margin-bottom: 18px;
+	padding: 5px;
+}
+.menup li:hover{
+	background-color: #709B2A;
+	
+}
+.sous-menus li:hover{
+	background-color: #709B2A;
+	
+	
+}
 .menus{
 
 	margin: auto;
@@ -51,13 +67,8 @@ nav {
 	padding: 10px;
 	color:#E7EFF0;
 }
-.menus a:hover,.menus2 a:hover{
-	color: #709B2A;
-}
-.sous-menus-list a:hover {
-	color: #709B2A;
-	
-}
+
+
 
 form{
 	display: flex;
@@ -117,7 +128,7 @@ form.example::after {
 .sous-menus-list a {
 	
 	padding: 10px;
-	color:#AEB1B3;
+	color:#E7EFF0;
 }
 /*menucarte*/
 .menucarte {
@@ -189,9 +200,15 @@ form.example::after {
 		margin-top: auto;
 		margin-bottom: auto;
 		}
+	.menus a:hover,.menus2 a:hover{
+		color: #709B2A;
+	}
+	.sous-menus-list a:hover {
+		color: #709B2A;
 	
+	}
 	.menup{
-	width:60%;
+		width:60%;
 	}
 
 	.menus{
@@ -212,6 +229,19 @@ form.example::after {
 	
 	display: flex;	
 	}
+	.menup li,.sous-menus li{
+	border:none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
+	}
+	.menup li:hover{
+	 background-color:transparent;
+	
+	}
+	.sous-menus li:hover{
+		background-color:transparent;
 	
 	
+	}
 }
